@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>AI Assistant</title>
+</head>
+<body>
+<h1>AI Assistant</h1>
+<form action="/generate" method="post">
+    <label for="prompt">Enter your prompt:</label>
+    <input type="text" id="prompt" name="prompt">
+    <button type="submit">Generate</button>
+</form>
+<h2>Response:</h2>
+<p th:text="${response}"></p>
+</body>
+</html>
